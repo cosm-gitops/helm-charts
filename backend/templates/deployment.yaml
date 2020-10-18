@@ -42,14 +42,14 @@ spec:
               httpHeaders:
               - name: Host
                 value: localhost
-              path: /health
+              path: /app-health/
               port: http
           readinessProbe:
             httpGet:
               httpHeaders:
               - name: Host
                 value: localhost
-              path: /health
+              path: /app-health/
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
