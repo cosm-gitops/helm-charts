@@ -36,6 +36,7 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+containerPort: 8000
 service:
   type: ClusterIP
   port: 80
