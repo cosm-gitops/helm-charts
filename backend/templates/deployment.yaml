@@ -32,6 +32,8 @@ spec:
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          tty: {{ .Values.image.tty | default false }}
+          stdin: {{ .Values.image.stdin | default false }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
