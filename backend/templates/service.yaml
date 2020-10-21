@@ -4,6 +4,16 @@ metadata:
   name: {{ include "backend.fullname" . }}
   labels:
     {{- include "backend.labels" . | nindent 4 }}
+  annotations:
+    getambassador.io/config: |
+      ---
+      apiVersion: ambassador/v2
+      kind: Mapping
+      name: {{ include "backend.fullname" . }}-service_mapping
+      prefix: /{{ include "backend.fullname" . }}
+      rewrite: /
+      service: {{ include "backend.fullname" . }}.{{ .Release.Namespace }}:{{ .Values.service.port }}
+
 spec:
   type: {{ .Values.service.type }}
   ports:
