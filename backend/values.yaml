@@ -60,10 +60,10 @@ serviceAnnotations: {}
 
 resources:
   requests:
-    cpu: 500m
+    cpu: 100m
     memory: 64Mi
   limits:
-    cpu: 100m
+    cpu: 500m
     memory: 256Mi
 
 autoscaling:
