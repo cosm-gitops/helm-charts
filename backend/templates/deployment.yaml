@@ -35,6 +35,13 @@ spec:
           tty: {{ .Values.image.tty | default false }}
           stdin: {{ .Values.image.stdin | default false }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          resources:
+            requests:
+              memory: {{ .Values.resources.requests.memory | default "64Mi" }}
+              cpu: {{ .Values.resources.requests.cpu | default "250m" }}
+            limits:
+              memory: {{ .Values.resources.requests.memory | default "128Mi" }}
+              cpu: {{ .Values.resources.requests.memory | default "500m" }}
           ports:
             - name: http
               containerPort: {{ .Values.containerPort | default 80 }}
