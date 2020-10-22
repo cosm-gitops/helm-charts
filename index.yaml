@@ -3,12 +3,12 @@ entries:
   backend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-10-22T08:48:30.88108-07:00"
+    created: "2020-10-22T09:08:50.827299-07:00"
     description: A Helm chart for Kubernetes
-    digest: 2dfd24df6e4a57dc38c066066a1d005e850f6487cdbc1a3e3e7a0d9de71a0f83
+    digest: 3e41b90cb9bf70ad20b43829b329f060fc0f39448495f3c25652dfce82163d7a
     name: backend
     type: application
     urls:
-    - backend-0.1.10.tgz
-    version: 0.1.10
-generated: "2020-10-22T08:48:30.880148-07:00"
+    - backend-0.1.11.tgz
+    version: 0.1.11
+generated: "2020-10-22T09:08:50.82588-07:00"
