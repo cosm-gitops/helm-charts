@@ -3,9 +3,9 @@ entries:
   backend:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-10-25T13:59:56.5705-07:00"
+    created: "2020-10-26T11:41:16.632846-07:00"
     description: A Helm chart for Kubernetes
-    digest: e2da1b8e6945f2c844e345c976cd7b60d4bc2c1aa7790b1c155b41b5667c3d6a
+    digest: 80d3f0b43f0c2318f7f37b3175a4febb7522fd94f4ada0453ab51aaac4016171
     name: backend
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.14
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-10-25T13:59:56.569439-07:00"
+    created: "2020-10-26T11:41:16.632157-07:00"
     description: A Helm chart for Kubernetes
     digest: ab9ecf29c359d9000b19a903ab9f03d1832c21cd539df64ac122fb4e5651dcda
     name: backend
@@ -21,4 +21,4 @@ entries:
     urls:
     - backend-0.1.13.tgz
     version: 0.1.13
-generated: "2020-10-25T13:59:56.564472-07:00"
+generated: "2020-10-26T11:41:16.629926-07:00"
